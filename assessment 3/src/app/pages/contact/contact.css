@@ -1,0 +1,559 @@
+/* Contact Page Styles */
+.contact-page {
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.section-title {
+  color: #1F3C88;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #1F3C88;
+  padding-bottom: 10px;
+}
+
+/* Accordion Styles */
+.accordion-section {
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f1f3f5;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #e9ecef;
+}
+
+.accordion-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1F3C88;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 20px;
+}
+
+.accordion-content.active {
+  max-height: 500px;
+  padding: 20px;
+}
+
+.accordion-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.accordion-content ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.accordion-content li {
+  margin-bottom: 8px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Form Styles */
+.form-section {
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1F3C88;
+  box-shadow: 0 0 0 2px rgba(31, 60, 136, 0.2);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #dc3545;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  background-color: #1F3C88;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #152a65;
+}
+
+.submit-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Contact Info Styles */
+.contact-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  border-left: 4px solid #1F3C88;
+}
+
+.info-card h3 {
+  color: #1F3C88;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  margin: 5px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+}
+
+
+.services-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+/* =================================
+   Services Page Header
+   ================================= */
+.services-page .container .row.mb-5 h1 {
+  color: var(--secondary-color);
+}
+
+.services-page .container .row.mb-5 p.lead {
+  color: var(--muted-text);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* =================================
+   Service Cards
+   ================================= */
+.service-card {
+  position: relative;
+  height: 100%;
+  border: none;
+  transition: var(--transition);
+  background: var(--white);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.service-card .card-body {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+}
+
+.service-card .card-title {
+  font-size: 1.5rem;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.service-card .card-text {
+  color: var(--muted-text);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* =================================
+   Service Icons
+   ================================= */
+.service-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: var(--transition);
+  border-radius: 50%;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+/* Color variations for different services */
+.service-icon.bg-primary.bg-opacity-10 {
+  background-color: rgba(13, 110, 253, 0.1) !important;
+}
+
+.service-icon.bg-success.bg-opacity-10 {
+  background-color: rgba(25, 135, 84, 0.1) !important;
+}
+
+.service-icon.bg-info.bg-opacity-10 {
+  background-color: rgba(13, 202, 240, 0.1) !important;
+}
+
+.service-icon.bg-warning.bg-opacity-10 {
+  background-color: rgba(255, 193, 7, 0.1) !important;
+}
+
+.service-icon.bg-danger.bg-opacity-10 {
+  background-color: rgba(220, 53, 69, 0.1) !important;
+}
+
+.service-icon.bg-secondary.bg-opacity-10 {
+  background-color: rgba(108, 117, 125, 0.1) !important;
+}
+
+/* Icon color classes */
+.text-primary { color: var(--secondary-color) !important; }
+.text-success { color: var(--success-color) !important; }
+.text-info { color: var(--info-color) !important; }
+.text-warning { color: var(--warning-color) !important; }
+.text-danger { color: var(--danger-color) !important; }
+.text-secondary { color: var(--muted-text) !important; }
+
+/* =================================
+   Services Grid Layout
+   ================================= */
+.services-page .row.g-4 {
+  margin: 0 -1rem;
+  margin-bottom: 3rem;
+}
+
+.services-page .row.g-4 > .col-lg-3,
+.services-page .row.g-4 > .col-md-6 {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+/* =================================
+   Technology Solutions Section
+   ================================= */
+.services-page .row.py-5 {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 4rem 2rem;
+  margin: 3rem 0;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.services-page .row.py-5 h2 {
+  color: var(--dark-text);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.services-page .row.py-5 p.lead {
+  color: var(--muted-text);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.services-page .row.py-5 .badge {
+  margin: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  cursor: default;
+}
+
+.services-page .row.py-5 .badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Badge color variations */
+.services-page .badge.bg-primary { background-color: var(--secondary-color); color: var(--white); }
+.services-page .badge.bg-success { background-color: var(--success-color); color: var(--white); }
+.services-page .badge.bg-info { background-color: var(--info-color); color: var(--dark-text); }
+.services-page .badge.bg-warning { background-color: var(--warning-color); color: var(--dark-text); }
+.services-page .badge.bg-danger { background-color: var(--danger-color); color: var(--white); }
+
+/* =================================
+   Learn More Buttons
+   ================================= */
+.service-card .btn {
+  margin-top: auto;
+  padding: 0.625rem 1.5rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.service-card .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* =================================
+   Services Page Column Layout
+   ================================= */
+.services-page .col-lg-3 {
+  display: flex;
+}
+
+.services-page .col-lg-3 .card {
+  width: 100%;
+}
+
+/* =================================
+   Services Page Responsive
+   ================================= */
+@media (max-width: 992px) {
+  .services-page .row.g-4 > .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  .service-card .card-body {
+    padding: 1.75rem 1.25rem;
+    min-height: 320px;
+  }
+  
+  .service-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .service-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .service-card .card-title {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-page .row.g-4 > .col-lg-3,
+  .services-page .row.g-4 > .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .service-card .card-body {
+    padding: 1.5rem 1.25rem;
+    min-height: auto;
+  }
+  
+  .services-page .row.py-5 {
+    padding: 3rem 1.5rem;
+  }
+  
+  .service-icon {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 1.25rem;
+  }
+  
+  .service-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-page .row.py-5 {
+    padding: 2rem 1rem;
+  }
+  
+  .services-page .row.py-5 h2 {
+    font-size: 1.5rem;
+  }
+  
+  .services-page .row.py-5 p.lead {
+    font-size: 1rem;
+  }
+  
+  .services-page .row.py-5 .badge {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.85rem;
+    margin: 0.35rem;
+  }
+  
+  .service-card .card-body {
+    padding: 1.25rem 1rem;
+  }
+  
+  .service-card .card-title {
+    font-size: 1.25rem;
+  }
+  
+  .service-card .card-text {
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .service-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .service-card .btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* =================================
+   Additional Services Page Enhancements
+   ================================= */
+
+/* Hover effect for entire card */
+.service-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.service-card:hover::before {
+  left: 100%;
+}
+
+/* Icon animation on hover */
+@keyframes iconPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.service-card:hover .service-icon {
+  animation: iconPulse 1s ease-in-out;
+}

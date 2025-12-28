@@ -1,0 +1,45 @@
+/* Services Page Styles */
+.services-page {
+  background-color: #f8f9fa;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.service-icon {
+  transition: background-color 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background-color: rgba(13, 110, 253, 0.2) !important;
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.card {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .services-page .container {
+    padding: 1rem;
+  }
+  
+  .service-card {
+    margin-bottom: 1rem;
+  }
+}
