@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+     <div class="header">
+                     <nav class="nav">
+            <div class="nav-container">
+                <div class="logo-area">
+                    <div class="logo-box">
+                        <span class="logo-text">MFKS</span>
+                    </div>
+                    <div class="brand-name">
+                        <h1>Mohamed Farhan K S</h1>
+                    </div>
+                </div>
+                
+                <div class="nav-links">
+                    
+                        <a href="portfolio.html">
+                            <button class="nav-btn active">Home</button>
+                        </a>
+                
+                    
+                        <a href="about.html">
+                            <button class="nav-btn active">About</button>
+                        </a>
+                    
+                    
+                        <a href="contact.html">
+                            <button class="nav-btn active">Contact</button>
+                        </a>
+                
+                    <button class="btn hire-btn">
+                        <span>Hire Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <button class="mobile-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="mobile-nav" id="mobileMenu">
+
+               
+            </div>
+        </nav>
+    
+
+<main>
+<div id="contact" class="about-container">
+            <section class="section">
+                <div class="">
+                    <div class="section-title">
+                        <h3>Get In Touch</h3>
+                        <p style="color: yellow">Let's discuss your next project</p>
+                    </div>
+                    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <div class="contact-icon bg-blue">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 style="font-weight: bold; margin-bottom: 0.25rem;">Email</h4>
+                                    <p style="color: #6b7280;">mfksfarhan@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon bg-purple">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 style="font-weight: bold; margin-bottom: 0.25rem;">Phone</h4>
+                                    <p style="color: #6b7280;">+91 8129114096</p>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon bg-orange">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 style="font-weight: bold; margin-bottom: 0.25rem;">Location</h4>
+                                    <p style="color: #6b7280;">kunjanam katt house,eriyad,madavan p.o,kodungallur,thrissur,kerala,india - 680666</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3 style="margin-bottom: 1.5rem;">Send Me a Message</h3>
+                            <form onsubmit="handleSubmit(event)">
+                                <div class="form-group">
+                                    <label>Your Name</label>
+                                    <input type="text" placeholder="John Smith" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Your Email</label>
+                                    <input type="email" placeholder="mfksfarhan@gmail.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Your Message</label>
+                                    <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <span>Send Message</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </main>
+
+
+
+
+<div id="contact">
+    <h3 id="hme">Contact Me</h3>
+
+    <form id="pme">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value="" required><br><br>
+        <label for="message">Your queries :</label><br>
+        <input type="radio" name="Service" value="other" required>Service<br><br>
+        <input type="radio" name="other" value="other" required>Other<br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="" rows="8" maxlength="1000" required></textarea><br><br>
+
+        <input type="submit" value="Send Message">
+    </form>
+</div>
+     </div>
+
+ <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <div class="footer-logo">MFKS</div>
+                        <h3>Mohamed Farhan K S</h3>
+                    </div>
+                    <p style="color: #d1d5db; font-size: 0.875rem;">Crafting exceptional digital experiences</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="portfolio.html">
+                            <button class="nav-btn active">Home</button>
+                        </a> </li>
+                
+                    
+                    <li><a href="about.html">
+                            <button class="nav-btn active">About</button>
+                        </a></li>
+                    
+                    
+                        <li><a href="contact.html">
+                            <button class="nav-btn active">Contact</button>
+                        </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mohamed-farhan-k-s-mfks-31002a35b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+                        "><i class="fab fa-linkedin-in">
+                         <img src="linkedin.jpeg" alt="LinkedIn" class="ic">
+                        </i></a>
+                        <a href="#"><i class="fab fa-github">
+                         <img src="github.jpeg" alt="GitHub" class="ic">
+                         </i></a>
+                        <a href="https://www.facebook.com/share/1LJjVmmeBq/"><i class="fab fa-facebook">
+                         <img src="facebook.jpeg" alt="Facebook" class="ic">
+                        </i></a>
+                        <a href="https://www.instagram.com/faran.eyy?igsh=MTdkaDdybjFvMGJnbQ=="><i class="fab fa-instagram">
+                       <img src="instagram.jpeg" alt="Instagram" class="ic">
+                        </i></a>
+                    </div>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <p style="color: #9ca3af;">&copy;  2025 Mohamed Farhan K S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

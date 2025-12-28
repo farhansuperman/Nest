@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo-area">
+                    <div class="logo-box">
+                        <span class="logo-text">MFKS</span>
+                    </div>
+                    <div class="brand-name">
+                        <h1>Mohamed Farhan K S</h1>
+                    </div>
+                </div>
+                
+                <div class="nav-links">
+                    
+                        <a href="portfolio.html">
+                            <button class="nav-btn active">Home</button>
+                        </a>
+                
+                    
+                        <a href="about.html">
+                            <button class="nav-btn active">About</button>
+                        </a>
+                    
+                    
+                        <a href="contact.html">
+                            <button class="nav-btn active">Contact</button>
+                        </a>
+                
+                    <button class="btn hire-btn">
+                        <span>Hire Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <button class="mobile-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="mobile-nav" id="mobileMenu">
+
+               
+            </div>
+        </nav>
+
+    </div>
+     <main>
+        <div id="home" class="page-content active">
+            <section class="hero-section">
+                <div class="container hero-container">
+                     <img src="farhan.jpeg" alt="Profile" id="portpic"><br><br>
+                    <h2>Hi, I'm <span class="highlight">Mohamed Farhan K S</span></h2>
+                   <p>Computer Science Student | Aspiring Software Developer</p>
+
+                    <div class="hero-btns">
+                        <button class="btn btn-primary" href="contact.html">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn btn-outline">View Projects</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-title">
+                        <h3>What I Do</h3>
+                        <p>Transforming ideas into exceptional digital solutions</p>
+                    </div>
+                    <div class="grid grid-3">
+                        <div class="card">
+                            <div class="icon-box bg-blue">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Web Development</h4>
+                            <p>Building responsive and performant web applications using modern technologies</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon-box bg-purple">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <p>Creating beautiful and intuitive user interfaces that delight users</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon-box bg-orange">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h4>Consulting</h4>
+                            <p>Providing expert technical guidance and strategic solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section bg-white">
+                <div class="container"> 
+                    <div class="section-title">
+                        <h3>Featured Work</h3>
+                        <p>Some of my recent projects</p>
+                    </div>
+                    <div class="grid grid-3">
+                        <div class="card" style="padding: 0;">
+                            <img src="aicooking.jpeg" alt="AI Cooking Assistance Application" class="project-img gradient-blue">
+                      <div style="padding: 1.5rem;">
+                    <strong>AI BASED COOKING ASSISTANCE APPLICATION</strong>
+                                <p>A comprehensive solution built with modern technologies</p>
+                                <div class="tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="padding: 0;">
+                        <img src="detection.jpeg" alt="GEOWEED DETECT: DRONE-BASED INVASIVE PLANT DETECTION WITH GIS INTEGRATION" class="project-img gradient-blue">
+                            <div style="padding: 1.5rem;">
+                    <strong>GEOWEED DETECT: DRONE-BASED INVASIVE PLANT DETECTION WITH GIS INTEGRATIONA</strong>
+                                <p>A comprehensive solution built with modern technologies</p>
+                                <div class="tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Tailwind</span>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="card" style="padding: 0;">
+                    <img src="debugging.jpeg" alt="Debugging" class="project-img gradient-blue">
+                            <div style="padding: 1.5rem;">
+                    <strong>Dancing to debuging</strong>
+                                <p>A comprehensive solution built with modern technologies</p>
+                                <div class="tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> 
+        <section class="section bg-white">
+            <div class="container">
+            <div class="section-title">
+                <h3>Education Qualifications</h3>
+                 <div id="tablecontainer">
+               <table id="educationtable">
+            <tr>
+                <th>Education Qualifications</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <h4><li><strong>College Of Engineering and Management PUNNAPRA, Alappuzha.</strong></li></h4>
+                        <p>Bachelor of Technology in Computer Science and Engineering     </p>
+                        <p>5.99/10</p>
+                    </ul>    
+                </td>
+                <td>
+                    <p>2022 - On going</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <h4><li><strong>MES Higher Secondary School, Trissur, Kerala</strong></li></h4>
+                        <p>Higher Secondary Education     </p>
+                        <p>83.33/100</p>
+                    </ul>    
+                </td>
+                <td>
+                    <p>2020 - 2022</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <h4><li><strong>P. Bhaskaran Smaraka Government Higher Secondary School Kodungallur, Kodungallur, Trissur, Kerala</strong></li></h4>
+                        <p>Matriculation     </p>
+                        <p>99/100</p>
+                    </ul>    
+                </td>
+                <td>
+                    <p>2019 - 2020</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    </div>
+    </div>
+    </section>
+        
+     <section class="section bg-white">
+       <div class="container">
+        <div>
+         <h3 id="Activities">Activities</h3>
+        <p >Arts, Music, Content Creation,traveling,Welfare camps, Volunteering and community services.</p>
+    </div>
+    <div>
+        <h3 id="Languages">Languages</h3>
+        <p>Malayalam , English,Hind,Tamil.</p>
+    </div>
+    <div>
+        <h3 id="Soft Skills">Soft Skills</h3>
+        <p>Expressive Communication, Leadership, Teamwork and Collaboration, Emotional Intelligence,Continuous
+learner</p>
+    </div>
+    </div>
+
+     <div class="container">
+        <h3 id="Skills">Skills</h3>
+        <p>
+           <strong>Programming Languages :</strong> C(Intermediate), Python (Basic), Java (Basic)
+        </p>
+        <p>
+            <strong>Database : </strong>MySQL(intermediate)
+        </p>
+        <p>
+           <strong>Web Technologies : </strong>HTML(Intermediate), CSS(Intermediate), JS(intermediate)
+        </p>
+        <p>
+           <strong>Fundamental (Core CS Subjects ) :</strong> Data Structure, Operating System, Data Base Management System, OOPS
+        </p>
+               
+    </div>
+    
+    
+   
+    <div class="section bg-white">
+        <h3 id="Interests">Interests</h3>
+                   <p id="">Content creation and Digital Branding</p> 
+                   <p id=""> Coding and tech awareness</p>
+                   <p id=""> Exploring Social Media Trends and Creative modeling</p>
+    </div>
+    <div>
+        <h3 id="Activities">Activities</h3>
+        <p id="">Arts, Music, Content Creation,traveling,Welfare camps, Volunteering and community services.</p>
+    </div>
+    <div>
+        <h3 id="Languages">Languages</h3>
+        <p id="">Malayalam , English,Hind,Tamil.</p>
+    </div>
+    <div>
+        <h3 id="Soft Skills">Soft Skills</h3>
+        <p id="">Expressive Communication, Leadership, Teamwork and Collaboration, Emotional Intelligence,Continuous
+learner</p>
+    </div>
+    </div>
+    </section>
+     </main>
+    
+
+   <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <div class="footer-logo">MFKS</div>
+                        <h3>Mohamed Farhan K S</h3>
+                    </div>
+                    <p style="color: #d1d5db; font-size: 0.875rem;">Crafting exceptional digital experiences</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="portfolio.html">
+                            <button class="nav-btn active">Home</button>
+                        </a> </li>
+                
+                    
+                    <li><a href="about.html">
+                            <button class="nav-btn active">About</button>
+                        </a></li>
+                    
+                    
+                        <li><a href="contact.html">
+                            <button class="nav-btn active">Contact</button>
+                        </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mohamed-farhan-k-s-mfks-31002a35b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+                        "><i class="fab fa-linkedin-in">
+                         <img src="linkedin.jpeg" alt="LinkedIn" class="ic">
+                        </i></a>
+                        <a href="#"><i class="fab fa-github">
+                         <img src="github.jpeg" alt="GitHub" class="ic">
+                         </i></a>
+                        <a href="https://www.facebook.com/share/1LJjVmmeBq/"><i class="fab fa-facebook">
+                         <img src="facebook.jpeg" alt="Facebook" class="ic">
+                        </i></a>
+                        <a href="https://www.instagram.com/faran.eyy?igsh=MTdkaDdybjFvMGJnbQ=="><i class="fab fa-instagram">
+                       <img src="instagram.jpeg" alt="Instagram" class="ic">
+                        </i></a>
+                    </div>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <p style="color: #9ca3af;">&copy;  2025 Mohamed Farhan K S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
