@@ -1,0 +1,13 @@
+<div class="card-container">
+  <div class="product-card">
+    <img [src]="singleviewlist.image" [alt]="singleviewlist.title" class="product-image">
+    <div class="product-info">
+      <h2 class="product-title">{{ singleviewlist.title }}</h2>
+      <p class="product-category">{{ singleviewlist.category }}</p>
+      <p class="product-description">{{ singleviewlist.description }}</p>
+      <div class="product-price-rating">
+        <span class="product-price">${{ singleviewlist.price }}</span>
+        <span class="product-rating">⭐ {{ singleviewlist.rating.rate }} ({{ singleviewlist.rating.count }} reviews)</span>
+      </div>
+    </div>
+  </div>

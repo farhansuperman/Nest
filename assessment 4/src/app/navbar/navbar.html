@@ -1,0 +1,51 @@
+<nav class="navbar"style="background: linear-gradient(90deg, #000305, #c90505);">
+  <div class="nav-container" >
+    <!-- Logo -->
+    <div class="nav-logo">
+      <a routerLink="/" class="nav-link">M F K S</a>
+    </div>
+    
+    <!-- Desktop Navigation Menu -->
+    <ul class="nav-menu" >
+      <li class="nav-item">
+        <a routerLink="/home" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/products" class="nav-link">Products</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/categories" class="nav-link">Categories</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/deals" class="nav-link">Deals</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/contactus" class="nav-link">Contact</a>
+      </li>
+    </ul> 
+    
+    <!-- Right Side Icons -->
+    <div class="nav-icons">
+      <a routerLink="/search" class="nav-icon">
+        <i class="search-icon">🔍</i>
+      </a>
+      <a routerLink="/wishlist" class="nav-icon">
+        <i class="wishlist-icon">❤️</i>
+      </a>
+      <a routerLink="/cart" class="nav-icon">
+        <i class="cart-icon">🛒</i>
+        <span class="cart-count">0</span>
+      </a>
+      <a routerLink="/account" class="nav-icon">
+        <i class="account-icon">👤</i>
+      </a>
+    </div>
+    
+    <!-- Mobile Menu Toggle -->
+    <div class="hamburger" (click)="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>

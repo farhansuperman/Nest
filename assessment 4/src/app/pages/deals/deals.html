@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Deals & Offers - ShopHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Hero Banner -->
+    <section class="deals-hero">
+        <h1>🔥 Hot Deals & Offers</h1>
+        <p>Limited time offers you don't want to miss!</p>
+        
+        <div class="countdown-timer">
+            <div class="timer-box">
+                <span class="number" id="hours">23</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="timer-box">
+                <span class="number" id="minutes">59</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="timer-box">
+                <span class="number" id="seconds">45</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="deals-container">
+        <!-- Featured Deal Banner -->
+        <div class="featured-deal">
+            <div class="featured-content">
+                <h2>Deal of the Day: <span class="highlight">70% OFF</span></h2>
+                <p>Premium Wireless Noise-Canceling Headphones. Experience crystal-clear audio with advanced noise cancellation technology.</p>
+                <div class="featured-price">
+                    <span class="current">$89.99</span>
+                    <span class="original">$299.99</span>
+                </div>
+                <button class="featured-btn">Shop Now</button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop" alt="Featured Deal" class="featured-image">
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <div class="filter-buttons">
+                <button class="filter-btn active">All Deals</button>
+                <button class="filter-btn">Electronics</button>
+                <button class="filter-btn">Fashion</button>
+                <button class="filter-btn">Home</button>
+                <button class="filter-btn">Sports</button>
+            </div>
+            <select class="sort-select">
+                <option>Sort by: Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Discount: High to Low</option>
+                <option>Ending Soon</option>
+            </select>
+        </div>
+
+        <!-- Deals Grid -->
+        <div class="deals-grid">
+            <!-- Deal Card 1 -->
+            <div class="deal-card">
+                <div class="deal-badge">60% OFF</div>
+                <div class="deal-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop" class="deal-image" alt="Running Shoes">
+                    <div class="deal-timer">
+                        <i class="fas fa-clock"></i>
+                        <span>Ends in 5h 23m</span>
+                    </div>
+                </div>
+                <div class="deal-content">
+                    <h3 class="deal-title">Premium Running Shoes</h3>
+                    <p class="deal-description">Lightweight and comfortable athletic footwear</p>
+                    <div class="deal-pricing">
+                        <span class="deal-price">$39.99</span>
+                        <span class="original-price">$99.99</span>
+                        <span class="savings">Save $60</span>
+                    </div>
+                    <div class="deal-actions">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deal Card 2 -->
+            <div class="deal-card">
+                <div class="deal-badge">50% OFF</div>
+                <div class="deal-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop" class="deal-image" alt="Smart Watch">
+                    <div class="deal-timer">
+                        <i class="fas fa-clock"></i>
+                        <span>Ends in 3h 45m</span>
+                    </div>
+                </div>
+                <div class="deal-content">
+                    <h3 class="deal-title">Smart Fitness Watch</h3>
+                    <p class="deal-description">Track your health and stay connected</p>
+                    <div class="deal-pricing">
+                        <span class="deal-price">$99.99</span>
+                        <span class="original-price">$199.99</span>
+                        <span class="savings">Save $100</span>
+                    </div>
+                    <div class="deal-actions">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deal Card 3 -->
+            <div class="deal-card">
+                <div class="deal-badge">45% OFF</div>
+                <div class="deal-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600&h=600&fit=crop" class="deal-image" alt="Sunglasses">
+                    <div class="deal-timer">
+                        <i class="fas fa-clock"></i>
+                        <span>Ends in 8h 12m</span>
+                    </div>
+                </div>
+                <div class="deal-content">
+                    <h3 class="deal-title">Designer Sunglasses</h3>
+                    <p class="deal-description">UV protection with premium style</p>
+                    <div class="deal-pricing">
+                        <span class="deal-price">$43.99</span>
+                        <span class="original-price">$79.99</span>
+                        <span class="savings">Save $36</span>
+                    </div>
+                    <div class="deal-actions">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deal Card 4 -->
+            <div class="deal-card">
+                <div class="deal-badge">55% OFF</div>
+                <div class="deal-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&h=600&fit=crop" class="deal-image" alt="Sneakers">
+                    <div class="deal-timer">
+                        <i class="fas fa-clock"></i>
+                        <span>Ends in 6h 30m</span>
+                    </div>
+                </div>
+                <div class="deal-content">
+                    <h3 class="deal-title">Classic Sneakers</h3>
+                    <p class="deal-description">Timeless design meets modern comfort</p>
+                    <div class="deal-pricing">
+                        <span class="deal-price">$49.99</span>
+                        <span class="original-price">$110.99</span>
+                        <span class="savings">Save $61</span>
+                    </div>
+                    <div class="deal-actions">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deal Card 5 -->
+            <div class="deal-card">
+                <div class="deal-badge">40% OFF</div>
+                <div class="deal-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=600&h=600&fit=crop" class="deal-image" alt="Backpack">
+                    <div class="deal-timer">
+                        <i class="fas fa-clock"></i>
+                        <span>Ends in 12h 15m</span>
+                    </div>
+                </div>
+                <div class="deal-content">
+                    <h3 class="deal-title">Travel Backpack</h3>
+                    <p class="deal-description">Durable and spacious for all adventures</p>
+                    <div class="deal-pricing">
+                        <span class="deal-price">$35.99</span>
+                        <span class="original-price">$59.99</span>
+                        <span class="savings">Save $24</span>
+                    </div>
+                    <div class="deal-actions">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deal Card 6 -->
+            <div class="deal-card">
+                <div class="deal-badge">65% OFF</div>
+                <div class="deal-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=600&h=600&fit=crop" class="deal-image" alt="Bluetooth Speaker">
+                    <div class="deal-timer">
+                        <i class="fas fa-clock"></i>
+                        <span>Ends in 4h 50m</span>
+                    </div>
+                </div>
+                <div class="deal-content">
+                    <h3 class="deal-title">Portable Bluetooth Speaker</h3>
+                    <p class="deal-description">360° sound with deep bass</p>
+                    <div class="deal-pricing">
+                        <span class="deal-price">$29.99</span>
+                        <span class="original-price">$85.99</span>
+                        <span class="savings">Save $56</span>
+                    </div>
+                    <div class="deal-actions">
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Banner -->
+        <div class="newsletter-banner">
+            <h3>Get Deal Alerts!</h3>
+            <p>Subscribe to receive exclusive deals and early access to sales</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Filter buttons
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Wishlist toggle
+        const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+        wishlistBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                icon.classList.toggle('far');
+                icon.classList.toggle('fas');
+            });
+        });
+    </script>
+</body>
+</html>

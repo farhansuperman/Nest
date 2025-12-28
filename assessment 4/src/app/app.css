@@ -1,0 +1,18 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Ensure navbar stays at top */
+app-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
